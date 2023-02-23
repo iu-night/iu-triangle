@@ -1,0 +1,37 @@
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: overlay;
+  scrollbar-color: #cfcfcf #0000;
+  scrollbar-width: thin;
+}
+
+html.dark {
+  background: #121212;
+  scrollbar-color: #474747 #0000;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-track-piece:vertical:start {
+  --iu: bg-[#cfcfcf] dark:bg-[#474747];
+
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  --iu: bg-[#cfcfcf] dark:bg-[#474747];
+
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
